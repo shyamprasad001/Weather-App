@@ -16,7 +16,7 @@ const weatherSummaryImg = document.querySelector('.summary-container-img')
 const currentDateTxt = document.querySelector('.current-date-txt')
 const forecastItemsContainer = document.querySelector('.forecast-item-container')
 
-const apiKey= '04c83899e52afb9df5b3d2ada6a6801c'
+const apiKey= 'yourAPIkey'
 
 searchBtn.addEventListener('click', () => {
     if (cityInput.value.trim() !== '') {
