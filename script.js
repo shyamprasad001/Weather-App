@@ -16,7 +16,6 @@ const weatherSummaryImg = document.querySelector('.summary-container-img')
 const currentDateTxt = document.querySelector('.current-date-txt')
 const forecastItemsContainer = document.querySelector('.forecast-item-container')
 
-const apiKey= 'yourAPIkey'
 
 searchBtn.addEventListener('click', () => {
     if (cityInput.value.trim() !== '') {
@@ -35,7 +34,7 @@ cityInput.addEventListener('keydown', (event) => {
 })
 
 async function getFetchDate(endpoint, city) {
-    const apiUrl = `https://api.openweathermap.org/data/2.5/${endpoint}?q=${city}&appid=${apiKey}`
+    const apiUrl = `https://aged-snowflake-ba9a.seacode001.workers.dev?endpoint=${endpoint}&city=${city}`
     const response = await fetch(apiUrl)
     return response.json()
 }
